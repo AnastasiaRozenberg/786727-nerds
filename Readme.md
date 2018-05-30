@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Анастасия Розенберг](https://up.htmlacademy.ru/htmlcss/21/user/786727).
-* Наставник: `Неизвестно`.
+* Наставник: [Макс Масленко] (https://htmlacademy.ru/profile/biggus-dickus).
 
 ---
 

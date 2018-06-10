@@ -22,32 +22,54 @@
       <h1> Магазин готовых шаблонов </h1>
 
       <aside class="filter">
-        <h2 class="visually-hidden">Фильтр</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="filter-price"> Стоимость:
-            <input type="range" name="price" id="filter-price" min="0" max="15000">
-            от <output name="sum-from">0</output> до <output name="sum-to">15000</output>
-            </label>
-          </p>
-          <p>Сетка:</p>
-            <label for="grid-adaptive">
-            <input type="radio" name="grid" id="grid-adaptive" value="adaptive" checked> Адаптивная
-            </label>
-            <label for="grid-fixed">
-            <input type="radio" name="grid" id="grid-fixed" value="fixed">Фиксированная
-            </label>
-            <label for="grid-rubber">
-            <input type="radio" name="grid" id="grid-rubber" value="rubber">Резиновая
-            </label>
-          <p> Особенности: </p>
-            <select name="features" multiple size="5">
-              <option value="slider" selected>Слайдер</option>
-              <option value="advantages">Блок преимуществ</option>
-              <option value="news" selected>Новости</option>
-              <option value="gallery">Галерея</option>
-              <option value="cart">Корзина</option>
-            </select>
+          <fieldset class="filter-list">
+            <legend class="filter-name">Стоимость:</legend>
+              <input type="range" name="price" min="0" max="15000" class="range-field">
+              от <output name="sum-from" class="output-field">0</output> до <output name="sum-to" class="output-field">15000</output>
+          </fieldset>
+          <fieldset class="filter-list">
+            <legend class="filter-name">Сетка:</legend>
+              <ul>
+                <li class="filter-item">
+                  <input type="radio" name="grid" id="grid-adaptive" value="adaptive" checked class="radio-button">
+                  <label for="grid-adaptive">Адаптивная</label>
+                </li>
+                <li class="filter-item">
+                  <input type="radio" name="grid" id="grid-fixed" value="fixed" class="radio-button">
+                  <label for="grid-fixed">Фиксированная</label>
+                </li>
+                <li class="filter-item">
+                  <input type="radio" name="grid" id="grid-rubber" value="rubber" class="radio-button">
+                  <label for="grid-rubber">Резиновая</label>
+                </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-list">
+            <legend class="filter-name">Особенности:</legend>
+              <ul>
+                <li class="filter-item">
+                  <input type="checkbox" name="features-slider" id="features-slider" class="check-button" checked>
+                  <label for="features-slider">Слайдер</label>
+                </li>
+                <li class="filter-item">
+                  <input type="checkbox" name="features-advantages" id="features-advantages" class="check-button">
+                  <label for="features-advantages">Блок преимуществ</label>
+                </li>
+                <li class="filter-item">
+                  <input type="checkbox" name="features-news" id="features-news" class="check-button" checked>
+                  <label for="features-news">Новости</label>
+                </li>
+                <li class="filter-item">
+                  <input type="checkbox" name="features-gallery" id="features-gallery" class="check-button">
+                  <label for="features-gallery">Галерея</label>
+                </li>
+                <li class="filter-item">
+                  <input type="checkbox" name="features-cart" id="features-cart" class="check-button">
+                  <label for="features-cart">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
           <button type="submit" class="filter-button">
           показать
           </button>
@@ -144,15 +166,15 @@
       <p> Напишите нам </p>
       <form action="https://echo.htmlacademy.ru" method="post">
       <p>
-        <label for="write_us-name"> Ваше имя:</label>
-        <input type="text" name="write_us-name" id="write_us-name" placeholder="Имя Фамилия" required>
+        <label for="write-us-name"> Ваше имя:</label>
+        <input type="text" name="write-us-name" id="write-us-name" placeholder="Имя Фамилия" required>
       </p>
       <p>
-        <label for="write_us-mail"> Ваше e-mail:</label>
-        <input type="email" name="write_us-mail" id="write_us-mail" placeholder="email@example.com" required>
+        <label for="write-us-mail"> Ваш e-mail:</label>
+        <input type="email" name="write-us-mail" id="write-us-mail" placeholder="email@example.com" required>
       </p>
       <p> Текст письма: </p>
-      <textarea name="comment" id="comment-field" row="6" placeholder="В свободной форме" required></textarea>
+      <textarea name="comment" id="comment-field" rows="6" placeholder="В свободной форме" required></textarea>
     <button type="submit"> Отправить </button>
   </form>
   <button type="button" class="modal-close"> Закрыть </button>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -11,10 +11,10 @@
     <header class="main-header">
       <nav>
         <a href="index.html"><img src="img/nerds-logo.svg" alt="Логотип компании" width="160" height="65"></a>
-        <ul class="menu">
+        <ul class="menu reset-list">
           <li class="menu-item"><a class="menu-link" href="#"> студия </a></li>
           <li class="menu-item"><a class="menu-link" href="#"> клиенты </a></li>
-          <li class="menu-item"><a class="menu-link"> магазин </a></li>
+          <li class="menu-item"> магазин </li>
           <li class="menu-item"><a class="menu-link" href="#"> контакты </a></li>
         </ul>
         <div class="cart"> <a href="#">корзина </a></div>
@@ -33,7 +33,7 @@
           </fieldset>
           <fieldset class="filter-list">
             <legend class="filter-name">Сетка:</legend>
-              <ul>
+              <ul class="reset-list">
                 <li class="filter-item">
                   <input type="radio" name="grid" id="grid-adaptive" value="adaptive" checked class="radio-button">
                   <label for="grid-adaptive" class="radio-name">Адаптивная</label>
@@ -50,7 +50,7 @@
           </fieldset>
           <fieldset class="filter-list">
             <legend class="filter-name">Особенности:</legend>
-              <ul>
+              <ul class="reset-list">
                 <li class="filter-item">
                   <input type="checkbox" name="features-slider" id="features-slider" class="check-button" checked>
                   <label for="features-slider" class="check-name">Слайдер</label>
@@ -82,7 +82,7 @@
       <section class="sort">
         <h2 class="visually-hidden">Сортировка</h2>
         <p> Сортировать:</p>
-        <ul>
+        <ul class="reset-list">
           <li class="sort-button"><a href="#">По цене</a></li>
           <li class="sort-button"><a href="#">По типу</a></li>
           <li class="sort-button"><a href="#">По названию</a></li>
@@ -93,7 +93,7 @@
 
       <section class="catalog-list">
         <h2 class="visually-hidden">Каталог</h2>
-        <ul>
+        <ul class="reset-list">
           <li class="catalog-item">
             <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
             <h3 class="item-title"><a href="#"> SEDONA </a></h3>
@@ -134,8 +134,8 @@
       </section>
 
       <section class="pages">
-        <ul>
-          <li class="pages-button current"><a> 1 </a></li>
+        <ul class="reset-list">
+          <li class="pages-button current"> 1 </li>
           <li class="pages-button"><a href="#"> 2 </a></li>
           <li class="pages-button"><a href="#"> 3 </a></li>
           <li class="pages-button"><a href="#"> Следующая </a></li>
@@ -145,7 +145,7 @@
 
     <footer class="main-footer">
       <section class="footer-contacts">
-        <img src="img/Map.png" alt="Адрес дизайн-студии" width="1440" height="416">
+        <img src="img/map.jpg" alt="Адрес дизайн-студии" width="1440" height="416">
         <p class="contacts-title"> Nёrds design studio </p>
         <p class="contacts-adress"> 191186, Санкт-Петербург,
          ул. Б.Конюшенная, д.19/8</p>
@@ -156,7 +156,7 @@
       </section>
 
       <section class="footer-socialmedia">
-        <ul>
+        <ul class="reset-list">
           <li><a href="#"> VK </a></li>
           <li><a href="#"> Facebook </a></li>
           <li><a href="#"> Instagram </a></li>
@@ -177,8 +177,10 @@
         <label for="write-us-mail"> Ваш e-mail:</label>
         <input type="email" name="write-us-mail" id="write-us-mail" placeholder="email@example.com" required>
       </p>
-      <p> Текст письма: </p>
-      <textarea name="comment" id="comment-field" rows="6" placeholder="В свободной форме" required></textarea>
+      <p> 
+        <label for="comment-field"> Текст письма: </label>
+        <textarea name="comment" id="comment-field" rows="6" placeholder="В свободной форме" required></textarea>
+      </p>
     <button type="submit"> Отправить </button>
   </form>
   <button type="button" class="modal-close"> Закрыть </button>

@@ -1,10 +1,7 @@
 body {
-  padding: 0;
-  margin: 0;
   font-family: "Roboto", Arial, sans-serif;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   color: #283136;
   background-color: #ffffff;
 }
@@ -15,7 +12,7 @@ a {
 
 .main-header {
   font-weight: 500;
-  line-height: 30px;
+  line-height: 1.88;
   text-transform: uppercase;
   color: #000000;
   background-color: #eeeeee;
@@ -33,17 +30,10 @@ a {
   color: #a6a6a6;
 }
 
-.main-header li,
-.slider li,
-.services li,
-.information-features li,
-.partners li,
-.footer-socialmedia li,
-.filter li,
-.sort li,
-.catalog-list li,
-.pages li {
+.reset-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .slider {
@@ -54,13 +44,13 @@ a {
 .slider-title {
   font-size: 55px;
   font-weight: 500;
-  line-height: 55px;
+  line-height: 1;
   color: #000000;
 }
 
 .slider-button {
   font-weight: 500;
-  line-height: 18px;
+  line-height: 1.13;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #fb565a;
@@ -76,34 +66,31 @@ a {
 }
 
 .slider-page-1 {
-  background-image: url("../img/slide1.png");
-  background-repeat: no-repeat;
+  background-image: url("../img/slide1.png") no-repeat;
   background-position: right;
 }
 
 .slider-page-2 {
-  background-image: url("../img/slide2.png");
-  background-repeat: no-repeat;
+  background-image: url("../img/slide2.png") no-repeat;
   background-position: right;
 }
 
 .slider-page-3 {
-  background-image: url("../img/slide3.png");
-  background-repeat: no-repeat;
+  background-image: url("../img/slide3.png") no-repeat;
   background-position: right;
 }
 
 .services-title {
   font-size: 24px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 1.25;
   color: #000000;
   text-transform: uppercase;
 }
 
 .services-button {
   font-weight: 500;
-  line-height: 18px;
+  line-height: 1.13;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -117,7 +104,7 @@ a {
 }
 
 .services-item:first-child a:active {
-  color: #e06366
+  color: #e06366;
   background-color: #d7373b;
 }
 
@@ -148,27 +135,24 @@ a {
 }
 
 .services li:first-child {
-  background-image: url("../img/service-item-1.png");
-  background-repeat: no-repeat;
+  background-image: url("../img/service-item-1.png") no-repeat;
   background-position: top;
 }
 
 .services li:nth-child(2) {
-  background-image: url("../img/service-item-2.png");
-  background-repeat: no-repeat;
+  background-image: url("../img/service-item-2.png") no-repeat;
   background-position: top;
 }
 
 .services li:last-child {
-  background-image: url("../img/service-item-3.png");
-  background-repeat: no-repeat;
+  background-image: url("../img/service-item-3.png") no-repeat;
   background-position: top;
 }
 
 .information-tagline {
   font-size: 45px;
   font-weight: 500;
-  line-height: 45px;
+  line-height: 1;
   color: #000000;
 }
 
@@ -179,8 +163,7 @@ a {
 }
 
 .information-features {
-  background-image: url("../img/nerds-illustration.png");
-  background-repeat: no-repeat;
+  background-image: url("../img/nerds-illustration.png") no-repeat;
   background-position: top;
 }
 
@@ -193,13 +176,13 @@ a {
 .features-percent {
   font-size: 45px;
   font-weight: 700;
-  line-height: 10,06px;
+  line-height: 0.23;
 }
 
 .contacts-title {
   font-size: 18px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 1.67;
   text-transform: uppercase;
   color: #000000;
 }
@@ -210,7 +193,7 @@ a {
 
 .contacts-button {
   font-weight: 500;
-  line-height: 18px;
+  line-height: 1.13;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #fb565a;
@@ -231,20 +214,20 @@ a {
 .contacts p {
   font-size: 16px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 1.13;
   color: #000000;
 }
 
 .contacts .write-us {
   font-size: 45px;
   font-weight: 500;
-  line-height: 45px;
+  line-height: 1;
   color: #000000;
 }
 
 .contacts button  {
   font-weight: 500;
-  line-height: 18px;
+  line-height: 1.13;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #fb565a;
@@ -265,14 +248,14 @@ a {
 .catalog {
   font-size: 55px;
   font-weight: 500;
-  line-height: 55px;
+  line-height: 1;
   background-color: #eeeeee;
 }
 
 .filter-name {
   font-size: 18px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 1.67;
   color: #000000;
   text-transform: uppercase;
 }
@@ -283,14 +266,14 @@ a {
 
 .range {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.38;
   color: #283136;
   text-transform: uppercase;
 }
 
 .filter-item {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   color: #283136;
 }
 
@@ -312,7 +295,7 @@ a {
 .pages-button {
   font-size: 16px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 1.13;
   color: #000000;
   text-transform: uppercase;
   background-color: #eeeeee;
@@ -338,14 +321,14 @@ a {
 .sort p {
   font-size: 18px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 1;
   color: #000000;
   text-transform: uppercase;
 }
 
 .sort-button a {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
   color: #b2b2b2;
   text-transform: uppercase;
 }
@@ -365,21 +348,21 @@ a {
 .item-title a{
   font-size: 18px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 1.67;
   color: #000000;
   text-transform: uppercase;
 }
 
 .catalog-item {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.13;
   color: #666666;
 }
 
 .catalog-price {
   font-size: 16px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 1.13;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #fb565a;
@@ -391,5 +374,4 @@ a {
 
 .catalog-price:active {
   background-color: #d7373b;
-  color: #e06366;
 }

@@ -9,12 +9,12 @@
   </head>
   <body>
     <header class="main-header">
-      <nav>
-        <a href="index.html"><img src="img/nerds-logo.svg" alt="Логотип компании" width="160" height="65"></a>
+      <nav class="main-navigation">
+        <img src="img/nerds-logo.svg" alt="Логотип компании" width="160" height="65">
         <ul class="menu reset-list">
           <li class="menu-item"><a class="menu-link" href="#"> студия </a></li>
           <li class="menu-item"><a class="menu-link" href="#"> клиенты </a></li>
-          <li class="menu-item"> магазин </li>
+          <li class="menu-item"><a class="menu-link" href="catalog.html"> магазин </a></li>
           <li class="menu-item"><a class="menu-link" href="#"> контакты </a></li>
         </ul>
         <div class="cart"> <a href="#">корзина </a></div>
@@ -23,7 +23,7 @@
 
     <main>
       <h1 class="catalog"> Магазин готовых шаблонов </h1>
-
+    <div class="catalog-container">
       <aside class="filter">
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="filter-list">
@@ -78,11 +78,11 @@
           </button>
         </form>
       </aside>
-
+      <div class="catalog-list-wrapper">
       <section class="sort">
         <h2 class="visually-hidden">Сортировка</h2>
         <p> Сортировать:</p>
-        <ul class="reset-list">
+        <ul class="sort-list reset-list">
           <li class="sort-button"><a href="#">По цене</a></li>
           <li class="sort-button"><a href="#">По типу</a></li>
           <li class="sort-button"><a href="#">По названию</a></li>
@@ -93,7 +93,7 @@
 
       <section class="catalog-list">
         <h2 class="visually-hidden">Каталог</h2>
-        <ul class="reset-list">
+        <ul class="catalog-list-container reset-list">
           <li class="catalog-item">
             <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
             <h3 class="item-title"><a href="#"> SEDONA </a></h3>
@@ -134,13 +134,15 @@
       </section>
 
       <section class="pages">
-        <ul class="reset-list">
+        <ul class="pages-list reset-list">
           <li class="pages-button current"> 1 </li>
           <li class="pages-button"><a href="#"> 2 </a></li>
           <li class="pages-button"><a href="#"> 3 </a></li>
           <li class="pages-button"><a href="#"> Следующая </a></li>
         </ul>
       </section>
+    </div>
+    </div>
     </main>
 
     <footer class="main-footer">
@@ -148,23 +150,26 @@
         <img src="img/map.jpg" alt="Адрес дизайн-студии" width="1440" height="416">
         <p class="contacts-title"> Nёrds design studio </p>
         <p class="contacts-adress"> 191186, Санкт-Петербург,
-         ул. Б.Конюшенная, д.19/8</p>
+          ул. Б.Конюшенная, д.19/8</p>
         <p class="contacts-adress">
           <a href="tel:78122757575">  тел. +7(812)275-75-75 </a>
         </p>
-       <a class="contacts-button" href="#"> Напишите нам </a>
+        <a class="contacts-button" href="#"> Напишите нам </a>
       </section>
 
       <section class="footer-socialmedia">
-        <ul class="reset-list">
-          <li><a href="#"> VK </a></li>
-          <li><a href="#"> Facebook </a></li>
-          <li><a href="#"> Instagram </a></li>
+        <ul class="socialmedia-wrapper reset-list">
+            <li><a href="#"> VK </a></li>
+            <li><a href="#"> Facebook </a></li>
+            <li><a href="#"> Instagram </a></li>
         </ul>
-        <p>Давайте дружить, это выгодно!</p>
-        <p> Скидка 10% для друзей из социальных сетей.</p>
+        <div class="tagline-wrapper">
+          <p>Давайте дружить, это выгодно!</p>
+          <p> Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </section>
     </footer>
+
 
     <section class="contacts">
       <p class="write-us"> Напишите нам </p>
@@ -177,7 +182,7 @@
         <label for="write-us-mail"> Ваш e-mail:</label>
         <input type="email" name="write-us-mail" id="write-us-mail" placeholder="email@example.com" required>
       </p>
-      <p> 
+      <p>
         <label for="comment-field"> Текст письма: </label>
         <textarea name="comment" id="comment-field" rows="6" placeholder="В свободной форме" required></textarea>
       </p>

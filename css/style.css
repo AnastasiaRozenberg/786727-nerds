@@ -21,6 +21,14 @@ a {
   overflow: hidden;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  outline: 2px solid red;
+}
+
 .main-header {
   font-weight: 500;
   line-height: 1.88;
@@ -32,10 +40,8 @@ a {
 .main-navigation {
   display: flex;
   align-items: flex-end;
-  width: 1160px;
-  padding: 20px;
+  padding-bottom: 20px;
   padding-top: 50px;
-  margin: 0 auto;
   outline: 2px solid blue;
 }
 
@@ -77,9 +83,6 @@ a {
 .slider-box {
   display: flex;
   flex-direction: column;
-  width: 1160px;
-  padding: 0 20px;
-  margin: 0 auto;
   outline: 2px solid blue;
 }
 
@@ -128,9 +131,7 @@ a {
 
 .services-list {
   display: flex;
-  padding: 82px 20px;
-  width: 1160px;
-  margin: 0 auto;
+  padding: 82px 0;
   outline: 2px solid blue;
 }
 
@@ -211,10 +212,8 @@ a {
 
 .information {
   display: flex;
-  padding: 75px 20px;
+  padding: 75px 0;
   justify-content: space-between;
-  width: 1160px;
-  margin: 0 auto;
   outline: 2px solid blue;
 }
 
@@ -254,10 +253,8 @@ a {
 
 .partners-list {
   display: flex;
-  padding: 45px 20px;
+  padding: 45px 0;
   justify-content: space-around;
-  width: 1160px;
-  margin: 0 auto;
   outline: 2px solid blue;
 }
 
@@ -283,10 +280,8 @@ a {
 
 .footer-socialmedia {
   display: flex;
-  padding: 70px 20px;
+  padding: 70px 0;
   align-items: center;
-  width: 1160px;
-  margin: 0 auto;
   outline: 2px solid blue;
 }
 
@@ -300,13 +295,13 @@ a {
 .footer-socialmedia p:first-of-type {
   font-size: 36px;
   font-weight: 700;
-  list-style: 36px;
+  line-height: 1;
   color: #000000;
 }
 
 .footer-socialmedia p:last-of-type {
   font-size: 16px;
-  list-style: 22px;
+  line-height: 1.38;
 }
 
 .contacts p {
@@ -356,9 +351,7 @@ a {
 .catalog-container {
   display: flex;
   justify-content: space-between;
-  width: 1160px;
-  padding: 60px 20px;
-  margin: 0 auto;
+  padding: 60px 0;
   outline: 2px solid blue;
 }
 
@@ -394,15 +387,17 @@ a {
 .pages-list {
   display: flex;
   align-items: center;
+  margin: 25px 0;
 }
 
 .pages-button {
-  margin: 25px 10px 25px 0;
+  margin-right: 10px;
   padding:  16px 20px;
 }
 
 .pages-button:last-child {
-  padding:  15px 80px;
+  padding:  16px 80px;
+  margin-right: 0;
 }
 
 .catalog-item:nth-child(2n) {
@@ -472,8 +467,7 @@ a {
 
 .pages-button.current {
   background-color: #ffffff;
-  outline: solid 3px #dbdbdb;
-  outline-offset: -3px;
+  box-shadow: inset 3px 3px #eeeeee, inset -3px -3px #eeeeee;
 }
 
 .sort p {

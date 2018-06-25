@@ -118,7 +118,6 @@ a {
   position: absolute;
   left: 50%;
   bottom: 104px;
-  z-index: 100;
   width: 160px;
   height: 18px;
   text-align: center;
@@ -141,7 +140,7 @@ a {
 }
 
 
-.slider-control i {
+.slider-control a {
   position: relative;
   display: inline-block;
   width: 18px;
@@ -151,7 +150,7 @@ a {
   cursor: pointer;
 }
 
-.slider-control i::after {
+.slider-control a::after {
   content: "";
   width: 18px;
   height: 18px;
@@ -319,8 +318,8 @@ a {
 .information {
   display: flex;
   justify-content: space-between;
-  border-top: 2px solid #cccccc;
-  border-bottom: 2px solid #cccccc;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
   padding-bottom: 73px;
 }
 
@@ -356,11 +355,11 @@ a {
 }
 
 .information-services-list {
-  position: relative;
   padding-left: 3px;
 }
 
 .information-services-item {
+  position: relative;
   padding-bottom: 25px;
   padding-left: 35px;
 }
@@ -372,16 +371,6 @@ a {
   height: 2px;
   position: absolute;
   top: 10px;
-  left: 2px;
-}
-
-.information-services-item:nth-child(2)::before {
-  top: 60px;
-  left: 2px;
-}
-
-.information-services-item:nth-child(3)::before {
-  top: 108px;
   left: 2px;
 }
 
@@ -439,15 +428,12 @@ a {
   display: flex;
   align-items: center;
   padding: 45px 0 38px;
-  border-bottom: 2px solid #cccccc;
-}
-
-.partners-list li {
-  margin-right: 95px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .partners-list li:first-child {
   margin-left: 35px;
+  margin-right: 95px;
 }
 
 .partners-list li:nth-child(2) {
@@ -456,6 +442,10 @@ a {
 
 .partners-list li:nth-child(3) {
   margin-right: 115px;
+}
+
+.partners-list li:last-child {
+  margin-right: 0;
 }
 
 .partners-list li a{
@@ -501,23 +491,23 @@ a {
   padding: 50px 45px;
 }
 
-.contacts-adress {
+.contacts-address {
   color: #666666;
 }
 
-.contacts-adress {
+.contacts-address {
   line-height: 1.13;
   margin: 0;
   margin-bottom: 19px;
 }
 
-.contacts-adress a {
-  color: #666666;
-}
 
-.contacts-container div {
+.contacts-phone {
+  display: inline-block;
+  color: #666666;
   margin-bottom: 35px;
 }
+
 
 .contacts-title {
   font-size: 18px;
@@ -720,8 +710,10 @@ a {
   background: #f1f1f1;
 }
 
-.max-price {
-  text-align: right;
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .filter-name {
@@ -785,11 +777,33 @@ a {
 
 .sort-button:nth-child(4) {
   margin-right: 17px;
+  position: relative;
+}
+
+.sort-button:nth-child(4) a {
+  display: block;
+  position: absolute;
+  top: 7px;
+  background: url("../img/icon-down-dir.svg") no-repeat;
+  width: 11px;
+  height: 10px;
 }
 
 .sort-button:last-child {
   margin-right: 0;
+  position: relative;
 }
+
+.sort-button:last-child a{
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 11px;
+  background: url("../img/icon-up-dir.svg") no-repeat center;
+  width: 11px;
+  height: 10px;
+}
+
 
 .sort p {
   font-size: 18px;
@@ -907,7 +921,7 @@ a {
 .pages-button:active {
   opacity: 0.3;
   background-color: #d5d5d5;
-  border-top: solid #bfbfbf 2px;
+  box-shadow: inset 0 3px rgba(0, 1, 1, .1);
 }
 
 .pages-button.current {

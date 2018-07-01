@@ -594,19 +594,31 @@ a {
   margin-bottom: 10px;
 }
 
-.contacts {
+.modal-container {
   position: fixed;
-  background-color: #ffffff;
-  padding: 67px 100px 85px;
-  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.contact-us {
-  width: 760px;
-  bottom: 50px;
+.contacts {
+  display: none;
+  position: absolute;
   left: 50%;
-  margin-left: -480px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 960px;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #ffffff;
+  padding: 67px 100px 85px;
+  box-shadow: 0 20px 30px 1px #000000;
+  box-sizing: border-box;
+  overflow-x: auto;
 }
+
 
 .contacts .write-us {
   font-size: 45px;
@@ -614,10 +626,12 @@ a {
   line-height: 1;
   color: #000000;
   margin-bottom: 43px;
+  width: 760px;
 }
 
 
 .contacts p {
+  display: inline-block;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.13;
@@ -626,8 +640,8 @@ a {
 }
 
 .contact-form {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-block;
+  min-width: 760px;
 }
 
 .contact-form label{
@@ -635,39 +649,43 @@ a {
   margin-bottom: 12px;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
+.contact-form input,
 .contact-form textarea {
   box-sizing: border-box;
   width: 360px;
   padding: 12px 15px;
   padding-right: 40px;
-  font-family: inherit;
   font-size: 16px;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
 }
 
 .contact-form textarea {
   width: 760px;
   margin-bottom: 48px;
+  resize: vertical;
+  box-sizing: border-box;
 }
 
-.contact-form input[type="text"] {
- margin-right: 40px;
+.contacts .contact-name {
+ margin-right: 36px;
 }
 
-.contact-message label {
+.contacts .contact-message  {
   margin-top: 35px;
 }
 
 .contact-form input:hover,
 .contact-form textarea:hover {
   border-color: #b4b9bb;
+  outline: 0;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: #000000;
   color: #000000;
+  outline: 0;
 }
 
 /* .contact-form input:invalid {
@@ -676,7 +694,6 @@ a {
 } */
 
 .button-send  {
-  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.13;
@@ -911,8 +928,7 @@ a {
 .filter-button {
   display: inline-block;
   width: 100%;
-  height: 51px;
-  font-family: inherit;
+  padding: 18px 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.13;
@@ -1008,6 +1024,15 @@ a {
   opacity: 1;
 }
 
+.catalog-item img {
+  border: solid 1px #e5e5e5;
+  box-sizing: border-box;
+}
+
+.catalog-item:hover {
+  box-shadow: 0 10px 8px 5px #d5d5d5;
+}
+
 .catalog-list-container {
  display: flex;
  flex-wrap: wrap;
@@ -1022,6 +1047,7 @@ a {
   margin-bottom: 30px;
   padding-top: 39px;
   position: relative;
+
 }
 
 .catalog-item:nth-child(2n) {
@@ -1050,12 +1076,13 @@ a {
 
 .catalog-item-container {
   position: absolute;
-  padding-top: 24px;
+  padding: 24px 0 48px;
   width: 100%;
   background-color: #eeeeee;
   bottom: 0;
   text-align: center;
   display: none;
+  box-sizing: border-box;
 }
 
 .catalog-item:hover .catalog-item-container {
@@ -1078,10 +1105,13 @@ a {
 .catalog-item-container p {
   margin: 0;
   margin-bottom: 30px;
+  padding: 0 65px;
 }
 
-.catalog-item-container span {
-  display: block;
+.catalog-item:nth-child(1) p,
+.catalog-item:nth-child(3) p,
+.catalog-item:nth-child(4) p {
+  padding: 0 90px;
 }
 
 .catalog-price {
@@ -1094,7 +1124,6 @@ a {
   padding: 15px 63px;
   border-radius: 3px;
   display: inline-block;
-  margin-bottom: 48px;
 }
 
 .catalog-price:hover {

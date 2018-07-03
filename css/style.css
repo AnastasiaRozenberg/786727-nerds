@@ -140,6 +140,9 @@ a {
   border-radius: 50%;
 }
 
+.slider-control li {
+  display: inline-block;
+}
 
 .slider-control a {
   position: relative;
@@ -206,7 +209,7 @@ a {
 
 .slider-button:active {
   background-color: #d7373b;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, .3);
 }
 
 .slider-page-1 {
@@ -274,7 +277,7 @@ a {
 }
 
 .services-item:first-child a:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, .3);
   background-color: #d7373b;
 }
 
@@ -287,7 +290,7 @@ a {
 }
 
 .services-item:nth-child(2) a:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, .3);
   background-color: #00aa62;
 }
 
@@ -300,7 +303,7 @@ a {
 }
 
 .services-item:last-child a:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, .3);
   background-color: #e5a722;
 }
 
@@ -318,7 +321,6 @@ a {
 
 .information {
   display: flex;
-  justify-content: space-between;
   padding-bottom: 73px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
@@ -327,10 +329,7 @@ a {
 .information-about {
   flex-basis: 660px;
   padding-top: 75px;
-}
-
-.information-about p{
-  padding-left: 3px;
+  margin-right: auto;
 }
 
 .information-tagline {
@@ -382,15 +381,17 @@ a {
 .information-features {
   flex-basis: 380px;
   background: url("../img/nerds-illustration.png") no-repeat 20px 40px;
+  margin-left: auto;
 }
 
 .features-title {
   padding-top: 285px;
-  padding-left: 40px;
+  padding-right: 15px;
   margin: 0;
   margin-bottom: 56px;
   font-weight: 700;
   color: #000000;
+  text-align: right;
   text-transform: uppercase;
 }
 
@@ -508,7 +509,7 @@ a {
 
 .contacts-container  {
   position: absolute;
-  top: 60px;
+  top: 53px;
   left: calc(50% - 580px);
   min-height: 200px;
   width: 220px;
@@ -529,7 +530,7 @@ a {
 
 .contacts-phone {
   display: inline-block;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   color: #666666;
 }
 
@@ -561,7 +562,7 @@ a {
 
 .contacts-button:active {
   background-color: #d7373b;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, .3);
 }
 
 .footer-socialmedia {
@@ -736,7 +737,7 @@ a {
 
 .button-send:active {
   background-color: #d7373b;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, .3);
 }
 
 .modal-close {
@@ -1156,6 +1157,7 @@ a {
 
 .catalog-price:active {
   background-color: #d7373b;
+  box-shadow: inset 0 3px #c13135;
 }
 
 .pages-list {
@@ -1191,9 +1193,13 @@ a {
 
 .filter-button:active,
 .pages-button:not(.current):active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, .3);
   background-color: #d5d5d5;
   box-shadow: inset 0 3px rgba(0, 1, 1, .1);
+}
+
+.pages-button:not(.current):active a {
+  color: rgba(0, 0, 0, .3);
 }
 
 .pages-button.current {
